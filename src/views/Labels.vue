@@ -1,8 +1,7 @@
 <template>
-    <div>
-        labels.vue
-        <Nav/>
-    </div>
+    <Layout>
+        <p>你好我是标签</p>
+    </Layout>
 </template>
 
 <script>
@@ -11,6 +10,3 @@
     }
 </script>
 
-<style scoped>
-
-</style>
