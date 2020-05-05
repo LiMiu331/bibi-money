@@ -1,16 +1,20 @@
 <template>
     <nav>
-        <router-link to="/money" class="item">
-            <icon name="money"></icon>
+        <router-link to="/money" class="item" active-class="selected">
+            <icon name="money">
+            </icon>
             记账
+            <div class="bg-icon"></div>
         </router-link>
-        <router-link to="/labels" class="item">
+        <router-link to="/labels" class="item" active-class="selected">
            <icon name="label"></icon>
             标签
+            <div class="bg-icon"></div>
         </router-link>
-        <router-link to="/statistics" class="item">
+        <router-link to="/statistics" class="item" active-class="selected">
             <icon name="statistics"></icon>
             统计
+            <div class="bg-icon"></div>
         </router-link>
     </nav>
 </template>
@@ -22,6 +26,7 @@
 </script>
 
 <style  lang="scss" scoped>
+    @import "~@/assets/styles/helper.scss";
     nav {
         display: flex;
         box-shadow: 0 0 3px rgba(0,0,0,0.25);
@@ -36,6 +41,17 @@
             .icon {
                 width: 32px;
                 height: 32px;
+            }
+        }
+        > .item.selected{
+            .bg-icon{
+                z-index: -1;
+                position: absolute;
+                bottom: 4px;
+                width: 30px;
+                height: 12px;
+                padding: 3px;
+                background-image:$color-highlight;
             }
         }
     }
