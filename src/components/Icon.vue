@@ -9,6 +9,7 @@
     import  icon2 from '@/assets/icons/money.svg'
     import  icon3 from '@/assets/icons/statistics.svg'
     import  icon4 from '@/assets/icons/right.svg'
+    import icon5 from '@/assets/icons/back.svg'
     export default {
         props:['name'],
         name: 'Icon'
