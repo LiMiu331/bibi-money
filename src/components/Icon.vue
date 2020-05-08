@@ -8,7 +8,7 @@
     import  icon1 from '@/assets/icons/label.svg'
     import  icon2 from '@/assets/icons/money.svg'
     import  icon3 from '@/assets/icons/statistics.svg'
-    console.log(icon1,icon2,icon3)
+    import  icon4 from '@/assets/icons/right.svg'
     export default {
         props:['name'],
         name: 'Icon'
