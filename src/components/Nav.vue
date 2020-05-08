@@ -44,14 +44,14 @@
             }
         }
         > .item.selected{
-            position: relative;
+                position: relative;
             .bg-icon{
                 position: absolute;
                 z-index: -1;
-                width: 7.2vw;
+                width: 100%;
                 height: 1.6vh;
                 bottom: 0.2vh;
-                justify-content: space-around;
+                left: 2px;
                 background-image:$color-highlight;
             }
         }
