@@ -20,7 +20,6 @@
     import {Component} from 'vue-property-decorator';
     import Tabs from '@/components/Tabs.vue';
     import recordTypeList from '@/constants/recordTypeList';
-
     @Component({
         components: {Tabs, Tags, FormItem,  NumberPad}
     })
@@ -44,7 +43,7 @@
     }
 </script>
 <style lang="scss" scoped>
-    .layout-content {
+    ::v-deep .layout-content {
         display: flex;
         flex-direction: column-reverse;
     }
