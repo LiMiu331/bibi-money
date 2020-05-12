@@ -1,5 +1,7 @@
 type RootState ={
     recordList: RecordItem[];
+    createRecordError: Error|null;
+    createTagError: Error|null;
     tagList:  Tag[];
     currentTag?: Tag;
 }
@@ -10,6 +12,7 @@ type RecordItem = {
     type: string;
     amount: number; //数据类型
     createdAt?: string ; //类 /构造函数
+
 }
 type Tag = {
     id: string;
